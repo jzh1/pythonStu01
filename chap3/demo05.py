@@ -9,3 +9,9 @@ print(a, id(a))
 print(b, id(b))
 print(c, id(c))
 # 参数赋值
+
+# 解包赋值
+a, b = 10, 11
+print('交换前', a, b)
+a, b = b, a
+print('交换后', a, b)
