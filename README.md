@@ -26,4 +26,10 @@
 ## 第五章
 1 range 函数 
 2 循环结构(for while )
+3 break continue else demoFor2
+4 嵌套循环
+
+## 第六章
+1 
+2 
 3 
