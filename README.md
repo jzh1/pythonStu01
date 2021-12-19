@@ -32,4 +32,7 @@
 ## 第六章
 1 list 赋值使用操作
 2 list 切片
-3 
+切片详解：https://www.jianshu.com/p/15715d6f4dad
+3 list add 
+4 list remove,add 切片
+5 列表生成式
