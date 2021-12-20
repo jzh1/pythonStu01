@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time : 2021/12/20 8:49 PM
 # @Author: jonas.jiang
-# @File : info.py
+# @File : collect.py
 print('---------------    ----------------')
 items = ['jzh1', 'jzh3', 'jzh2']
 price = [11, 22, '33q',22]

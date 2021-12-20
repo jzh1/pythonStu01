@@ -30,7 +30,7 @@
 4 嵌套循环
 
 ## 第六章
-1 list 赋值使用操作
+1 list 赋值使用操作 -- 可变序列
 2 list 切片
 切片详解：https://www.jianshu.com/p/15715d6f4dad
 3 list add 
@@ -38,5 +38,10 @@
 5 列表生成式
 
 ## 第七章
-1 字典 add del edit view
+1 字典 add del edit view -- 可变序列
 2 字典循环
+
+## 第八章
+都是hash,不允许重复,无序，不可变序列
+1 元组 -- 没有生成式
+2 集合
