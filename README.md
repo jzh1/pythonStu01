@@ -36,3 +36,7 @@
 3 list add 
 4 list remove,add 切片
 5 列表生成式
+
+## 第七章
+1 字典 add del edit view
+2 字典循环
