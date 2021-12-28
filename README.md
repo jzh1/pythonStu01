@@ -78,7 +78,9 @@
 4 object 的一些方法 dir 查看 ojb4 
 5 多态 ojb5
 6 特殊的属性 ojb6 和方法 ojb7
-7 
+7 new init ojb8
+8 浅拷贝 ojb9
+9 深拷贝 ojb10
 
 
 ## 第十三章
