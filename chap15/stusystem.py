@@ -91,7 +91,6 @@ def delete():
                     student_old = files.readlines()
             else:
                 student_old = []
-            print(student_old)
 
             flag = False
             if student_old:
@@ -122,7 +121,42 @@ def delete():
 
 
 def modify():
-    pass
+    show()
+    while True:
+        if os.path.exists(file_name):
+            with open(file_name, 'r', encoding='utf-8') as files:
+                student_old = files.readlines()
+        else:
+            student_old = []
+
+        student_num = int(input('place input update student number:'))
+        if student_old:
+            with open(file_name, 'w', encoding='utf-8') as wfile:
+                for item in student_old:
+                    # 字符串转换为字典
+                    d = dict(eval(item))
+                    if d['id'] == student_num:
+                        while True:
+                            try:
+                                d['english'] = int(input('place input english:'))
+                                d['python'] = int(input('place input python:'))
+                                d['java'] = int(input('place input java:'))
+                                break
+                            except:
+                                print('input error place reinput!')
+                        wfile.write(str(d) + '\n')
+
+                        print('update success ')
+                    else:
+                        wfile.write(str(d) + '\n')
+        else:
+            print(f'{student_num} is not exit,place reinput!')
+
+        answer = input('is continue update y/n ?')
+        if answer == 'y' or answer == 'Y':
+            continue
+        else:
+            break
 
 
 def sort():
