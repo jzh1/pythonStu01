@@ -78,8 +78,36 @@ def save(lst):
     stu_txt.close()
 
 
+def show_student(lst):
+    if len(lst) == 0:
+        print('student is null ')
+        return
+
+    print(lst)
+
+
 def search():
-    pass
+    while True:
+        student_lst = []
+        student_no = int(input('place input student num:'))
+        if student_no != '':
+            if os.path.exists(file_name):
+                with open(file_name, 'r', encoding='utf-8') as files:
+                    student_old = files.readlines()
+                    for item in student_old:
+                        d = dict(eval(item))
+                        if d['id'] == student_no:
+                            student_lst.append(d)
+            else:
+                print('student data is null')
+                break
+        show_student(student_lst)
+        student_lst.clear()
+        answer = input('place continue search y/n?')
+        if answer == 'y' or answer == 'Y':
+            continue
+        else:
+            break
 
 
 def delete():
@@ -160,15 +188,35 @@ def modify():
 
 
 def sort():
-    pass
+    student_lst = []
+    sort_type = int(input('place chose sort 1/0 ?'))
+    if os.path.exists(file_name):
+        with open(file_name, 'r', encoding='utf-8') as files:
+            student_old = files.readlines()
+            for item in student_old:
+                d = dict(eval(item))
+                student_lst.append(d)
+
+    student_lst.sort(key=lambda x: int(x['java']), reverse=True)
+    print(student_lst)
 
 
 def total():
-    pass
+    total_num = 0
+    if os.path.exists(file_name):
+        with open(file_name, 'r', encoding='utf-8') as files:
+            student_old = files.readlines()
+            total_num = len(student_old)
+    print('total:' + str(total_num))
 
 
 def show():
-    pass
+    student_old = []
+    if os.path.exists(file_name):
+        with open(file_name, 'r', encoding='utf-8') as files:
+            student_old = files.readlines()
+
+    show_student(student_old)
 
 
 def menu():
