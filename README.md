@@ -102,3 +102,8 @@
 1 学生管理系统
 2 打包 pip install PyInstaller
 3 pyinstaller -F /Users/bowring/pythoncode/pythonStu01/chap15/stusystem.py
+
+## 第十六章
+1 one 输出项目
+2 two 输出颜色变色
+3 three  置换字符串的四种方式
