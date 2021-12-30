@@ -99,4 +99,6 @@
 4 os 操作函数
 
 ## 第十五章
-1 
+1 学生管理系统
+2 打包 pip install PyInstaller
+3 pyinstaller -F /Users/bowring/pythoncode/pythonStu01/chap15/stusystem.py
